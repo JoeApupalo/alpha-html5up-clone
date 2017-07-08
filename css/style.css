@@ -1,0 +1,529 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+body {
+	font: 300 1em/1.5 'Source Sans Pro', sans-serif;
+	background: #f5f5f5; /* rgb(245, 245, 245) */
+}
+
+h2, h3 {
+	font-weight: 300;
+	color: #646464; /* rgb(100, 100, 100) */
+}
+
+h2 {
+	margin-top: 0;
+}
+
+p {
+	color: #777; /* rgb(119, 119, 119) */
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+footer {
+	color: #999; /* rgb(153, 153, 153) */
+	font-size: .825em;
+	line-height: 2;
+	background: #F0F0F0; /* rgb(240, 240, 240) */
+	padding: 40px 0;
+}
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+#page-wrapper {
+	width: 100%;
+	box-sizing: border-box;
+	/*padding: 0 1em 0 1em;*/
+}
+
+/* Banner -------------------------------- */
+
+#banner {
+	background: #666 url('../img/banner.jpg') no-repeat center;
+	background-size: cover;
+	padding: 30px 15px;
+}
+
+#banner h2 {
+	font-size: 2.0625em; /* 33px / 16px */
+}
+
+#banner p {
+	font-size: 1.15em; /* 18.333px / 16px */
+}
+
+#banner h2,
+#banner p {
+	color: #fff;
+}
+
+
+
+
+
+/* Main Styles -------------------------------- */
+
+.main-header {
+	padding: 30px 0;
+}
+
+.main-header h2 {
+	font-size: 1.833em;
+}
+
+#main h3 {
+	font-size: 1.375em; /* 22px / 16px */
+}
+
+#main h2 {
+	font-size: 1.5625em; /* 25px / 16px */
+}
+
+.special-features p {
+	font-size: .91667em; /* 14.6667px / 16px */
+}
+
+.special-features span {
+	display: inline-block;
+	border-radius: 48%;
+	height: 80px;
+	width: 80px;
+}
+
+code {
+	background: #f8f8f8;
+	border-radius: 6px;
+	border: 1px solid #e5e5e5;
+	padding: 2px 8px;
+}
+
+pre {
+	border: 1px solid #e5e5e5;
+	border-radius: 6px;
+	padding: 1em 1.5em;
+	background: #f8f8f8;
+	font-size: .83em;
+	color: #777;
+}
+
+blockquote {
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 25px;
+	border-left: 4px solid #e5e5e5; /* rgb(229, 229, 229) */
+	font-size: .92em;
+	font-style: italic;
+}
+
+.unordered {
+	padding-left: 1em;
+}
+
+.unordered li {
+	list-style: disc outside;
+	padding-left: .5em;
+}
+
+
+/* Icons -------------------------------- */
+
+.major-icon {
+	width: 33px;
+	height: 33px;
+	display: inline-block;
+	padding-top: 23.5px;
+}
+
+.accent1 {
+	background: #e89980;
+}
+
+.accent2 {
+	background: #7fcdb8;
+}
+
+.accent3 {
+	background: #90b0ba;
+}
+
+.accent4 {
+	background: #e5cb95;
+}
+
+.magnifier::before {
+	background-image: url('../img/magnifier.png');
+	background-size: 1.1em 1.1em;
+	background-repeat: no-repeat;
+	display: inline-block;
+	content: '';
+	height: 1.1em;
+	width: 1.1em;
+	padding-right: 5px;
+	vertical-align: middle;
+}
+
+.download::before {
+	background-image: url('../img/download.png');
+	background-size: 1.1em 1.1em;
+	background-repeat: no-repeat;
+	display: inline-block;
+	content: '';
+	height: 1.1em;
+	width: 1.1em;
+	padding-right: 5px;
+	vertical-align: middle;
+}
+
+.check::before {
+	background-image: url('../img/check.png');
+	background-size: 1.1em 1.1em;
+	background-repeat: no-repeat;
+	display: inline-block;
+	content: '';
+	height: 1.1em;
+	width: 1.1em;
+	padding-right: 5px;
+	vertical-align: middle;
+}
+
+.icons {
+	padding: 15px 0 25px 0;
+}
+
+.label {
+	display: none;
+}
+
+.icons li {
+	display: inline-block;
+	padding: 0 15px 0 0;
+}
+
+.icons a {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+}
+
+.icons a.twitter {
+	background: url('../img/twitter.png') no-repeat center;
+	background-size: 23px 23px;
+}
+
+.icons a.facebook {
+	background: url('../img/facebook.png') no-repeat;
+	background-size: 23px 23px;
+}
+
+.icons a.instagram {
+	background: url('../img/instagram.png') no-repeat;
+	background-size: 23px 23px;
+}
+
+.icons a.github {
+	background: url('../img/github.png') no-repeat;
+	background-size: 23px 23px;
+}
+
+.icons a.dribbble {
+	background: url('../img/dribbble.png') no-repeat;
+	background-size: 23px 23px;
+}
+
+.icons a.google-plus {
+	background: url('../img/google-plus.png') no-repeat;
+	background-size: 23px 23px;
+}
+
+.icons a.tumblr {
+	background: url('../img/tumblr.png') no-repeat;
+	background-size: 23px 23px;
+}
+
+
+/* CTA -------------------------------- */
+
+#cta {
+	background: #e89980;
+	padding: 30px 0 30px 0; /* needs 15px padding on sides */
+	width: calc(100% + 2em);
+	margin-left: -1em;
+}
+
+#cta form {
+	background: none;
+}
+
+#cta,
+#cta h2, 
+#cta p,
+#cta input[type="email"],
+#cta input[type="email"]::placeholder {
+	color: rgba(255,255,255, 0.7);
+}
+
+#cta input[type="email"] {
+	background: rgba(255,255,255, 0.15);
+	border: none;
+}
+
+#cta input[type="email"]:focus {
+	box-shadow: inset 0 0 0 2px #fff;
+}
+
+#cta button {
+	background: #fff;
+	color: #e89980;
+}
+
+
+
+/* Tables-------------------------------- */
+
+table {
+	width: 100%;
+	font-size: 0.92em;
+	color: #777777; /* rgb(119, 119, 119) */
+	text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+	background: #f8f8f8;
+}
+
+tbody tr {
+	border: solid 1px #e5e5e5;
+}
+
+.dflt-table tbody tr:first-child {
+	border-top: 2px solid #e5e5e5;
+}
+
+.dflt-table tbody tr:last-child {
+	border-bottom: 2px solid #e5e5e5;
+}
+
+th {
+	font-weight: 300;
+	font-size: 0.9em;
+}
+
+th, td {
+	padding: 0.75em;
+}
+
+.alt-table tbody td + td {
+	border-left: solid 1px #e5e5e5;
+}
+
+.dflt-table tbody tr {
+	border-left: 0;
+	border-right: 0;
+}
+
+
+
+
+/* Forms-------------------------------- */
+
+form {
+	background: #fff;
+	padding: 30px 15px;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+	color: #777777; /* rgb(119, 119, 119) */
+	background: #f8f8f8; /* rgb(248, 248, 248) */
+	font-size: .91667em; /* 14.6667px / 16px */
+	width: 100%;
+	margin-bottom: 15px;
+	border-radius: 6px;
+	border: 1px solid #e5e5e5; /* rgb(229, 229, 229) */
+	box-sizing: border-box;
+	padding: 12px;
+	outline: 0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+	box-shadow: 0 0 0 3px #e87714;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.select-wrapper {
+	position: relative;
+}
+
+.select-wrapper::before {
+	content: '';
+	background: url(../img/down-arrow.png) no-repeat center;
+	background-size: 15px 15px;
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	right: .75em;
+	top: 1em;
+	pointer-events: none;
+}
+
+button {
+	width: 100%;
+	border-radius: 6px;
+	border: none;
+}
+
+
+
+
+
+
+
+/* ================================= 
+  DRY Classes
+==================================== */
+
+.center {
+	text-align: center;
+}
+
+.box {
+	padding: 22px 15px;
+	background: #fff;
+}
+
+
+
+/* Buttons-------------------------------- */
+
+.button {
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	border-radius: 6px;
+	font-size: .91667em; /* 14.6667px / 16px */
+	font-weight: normal;
+	width: 100%;
+	padding: 12px 0;
+	text-align: center;
+	/*background: #616161; /* rgb(97, 97, 97)*/
+	/*box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);*/
+}
+
+ul.actions, ul.actions-2 {
+	margin-bottom: 1.75em;
+	text-align: center;
+}
+
+ul.actions li:nth-child(n + 2) {
+	padding-top: 14px;
+}
+
+ul.actions-2 li:nth-child(n + 2) {
+	padding-top: 7px;
+}
+
+/* white button */
+.special { 
+	color: #666; 
+	background: #fff;
+}
+
+/* red button */
+.r-special { 
+	color: #fff; 
+	background: #e89980;
+}
+
+/* no fill button */
+.alt {
+	color: #777;
+	box-shadow: inset 0 0 0 2px #e5e5e5;
+	background: #fff;
+}
+
+/* black button */
+.default {
+	background: #616161; /* rgb(97, 97, 97) */
+	color: #fff;
+}
+
+/* disabled button */
+.disabled {
+	background: #e2e2e2; /* rgb(245, 245, 245) */
+	color: #fff;
+}
+
+/* transparent borders */
+.trans-border {
+	color: #fff;
+	box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.small {
+	padding: 6px 0;
+	font-size: .75em;
+}
+
+.fit li {
+	display: inline-block;
+	width: 30%;
+}
+
+.fit li:nth-child(-n + 2) {
+	padding-right: 2.7%;
+}
+
+.left {
+	float: left;
+	padding: 0 1em 1em 0;
+	
+}
+
+.right {
+	float: right;
+	padding: 0 0 1em 1em;
+	
+}
+
+a.d-link {
+	border-bottom: 1px dotted #999;
+	color: #999;
+}
+
+a.d-link-r {
+	border-bottom: 1px dotted #e89980;
+	color: #e89980;
+}

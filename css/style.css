@@ -132,11 +132,11 @@ footer {
 	}
 
 	/* nav menu icon*/
-	label[for="nav-expand"] {
+	label[class="menu-icon"] {
 		position: fixed;
 		top: 10px;
 		left: 10px;
-		z-index: 1000;
+		z-index: 3;
 		width: 56px;
 		height: 36px;
 		background: url(../img/menu-icon.png) no-repeat center, rgba(192,192,192, .75);
@@ -151,17 +151,20 @@ footer {
 
 	.nav-expand:checked ~ #page-wrapper {
 		left: 275px;
+		
 	}
 
 	/* label for nav-collapse */	
-	.nav-expand:checked ~ #page-wrapper .overlay {
+	.nav-expand:checked ~ #page-wrapper > .overlay {
 		min-width: 100%;
 		min-height: 100%;
 		left: 0;
 		bottom: 0;
-		/*background-color: rgba(0,0,0, .5);*/
+		
 		position: absolute;
-		/*transition: opacity .3s;*/
+		
+
+		
 	}
 
 	.nav-expand + label, #page-wrapper {
@@ -182,7 +185,7 @@ footer {
 	width: 100%;
 	box-sizing: border-box;
 	display: none;
-	z-index: 50;
+	z-index: 1000;
 
 }
 

@@ -262,7 +262,8 @@ footer {
 	opacity: 0;
 	/*transition: opacity .3s;*/
 	visibility: hidden;
-	box-shadow: 0 0 3px 0 rgba(0,0,0, 0.15);
+	box-shadow: 0 0 3px 0 rgba(0,0,0, 0.2);
+	z-index: 3;
 }
 
 .spacer {
@@ -331,8 +332,23 @@ footer {
 	right: 13px;
 	top: -10px;
 	/*opacity: 0;*/
-
 	pointer-events: none;
+	z-index: 5;
+}
+
+.drop-nav li.first::after {
+	content: '';
+	background: url(../img/triangle-2.png) no-repeat center;
+	background-size: 13px 13px;
+	display: inline-block;
+	position: absolute;
+	height: 13px;
+	width: 13px;
+	right: 13px;
+	top: -13px;
+	/*opacity: 0;*/
+	pointer-events: none;
+	z-index: 2;
 }
 
 /* increase space between .dropdown button and drop-nav */
@@ -1519,7 +1535,7 @@ ul.actions-2 li:nth-child(n + 2) {
 	/* Layout-------------------------------- */
 
 	#nav-expand,
-	label[for="nav-expand"] {
+	label[for="nav-trigger"] {
 		display: none;
 	}
 

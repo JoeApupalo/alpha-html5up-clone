@@ -146,11 +146,11 @@ footer {
 	}
 
 	.nav-expand:checked + label {
-		left: 265px;
+		left: 245px;
 	}
 
 	.nav-expand:checked ~ #page-wrapper {
-		left: 255px;
+		left: 235px;
 		
 	}
 
